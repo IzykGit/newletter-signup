@@ -8,7 +8,7 @@
 </head>
 <body>
     <main>
-        <section>
+        <section class="sub-section">
             <div class="signup">
 
                 <h1>Stay updated!</h1>
@@ -19,18 +19,29 @@
                     <li><img src="./assets/images/icon-list.svg" alt="*" aria-label="2"/>Measuring to ensure updates are a success</li>
                     <li><img src="./assets/images/icon-list.svg" alt="*" aria-label="3"/>And much more!</li>
                 </ul>
-                <form action="post">
+                <form id="form">
                     <label htmlFor="email" class="form-label">Email address</label>
-                    <input type="email" id="email" name="email" class="form-input"/>
-                    <button class="form-button" id="form-button">Subscribe to monthly newsletter</button>
+                    <input type="email" id="email" name="email" class="form-input" required/>
+                    <button type="submit" class="form-button" id="form-button">Subscribe to monthly newsletter</button>
                 </form>
 
             </div>
 
             <div>
-                <img src="./assets/images/illustration-sign-up-desktop.svg" class="illustration"/>
+                <img src="./assets/images/illustration-sign-up-desktop.svg" class="illustration" alt="Please subscribe!" aria-label="" id="illustration"/>
             </div>
         </section>
+
+        <section class="thank-section">
+            <img src="./assets/images/icon-success.svg" alt="" aria-label="">
+            <h1>Thanks for subscribing!</h1>
+
+            <summary>A confirmation email has been sent to <span id="display-email"></span>. Please open it and click the button inside to confirm your subscription.</summary>
+            
+            <button type="button" id="dismiss-button" aria-label="dissmiss">Dismiss messasge</button>
+        </section>
     </main>
+
+    <script src="./script.js"></script>
 </body>
 </html>
