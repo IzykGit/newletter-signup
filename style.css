@@ -22,7 +22,7 @@ main {
 .sub-section {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
 
     border-radius: 2rem;
     background-color: white;
@@ -40,7 +40,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 
     box-sizing: border-box;
     padding: 0rem 1.5rem;
@@ -89,6 +88,8 @@ form {
 .form-label {
     color: hsl(234, 29%, 20%);
     font-weight: 600;
+    font-size: 0.9rem;
+
     margin-bottom: 0.5rem;
 }
 
@@ -111,14 +112,15 @@ form {
     border: none;
     border-radius: 0.5rem;
 
-    background-color: hsl(4, 100%, 67%);
+    background-color: hsl(234, 29%, 20%);
     cursor: pointer;
 
     transition: 0.4s;
 }
 
 .form-button:hover {
-    box-shadow: 0 0 1.5rem 0rem hsl(4, 100%, 67%);
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0 1rem 0 hsl(4, 100%, 67%);
 }
 
 
@@ -222,7 +224,8 @@ form {
 }
 
 .thank-section > button:hover {
-    box-shadow: 0 0 1rem 0 hsl(234, 29%, 20%);
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0 1rem 0 hsl(4, 100%, 67%);
 }
 
 @media screen and (max-width: 550px) {
